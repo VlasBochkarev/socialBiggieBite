@@ -1,0 +1,11 @@
+.header {
+    grid-area: h;
+    background-color: rgb(124, 95, 16);
+}
+
+.logo {
+    color: #fff;
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 3px 2px 1px gray;
+}

@@ -1,0 +1,14 @@
+.items img{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.items {
+    color: gold;
+    font-size: 20px;
+    padding: 10px;
+    
+    
+}
