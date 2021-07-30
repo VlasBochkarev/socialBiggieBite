@@ -7,17 +7,26 @@
 
 .dialogsItems{
     padding: 10px;
+    font-size: 20px;
+    
 }
 
-.dialogsItems .active{
+.dialogsItems a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.dialogsItems a.active{
     color: gold;
 }
 
 /*MESSAGES*/
 .messages{
     padding: 10px;
+    color: gold;
+    font-size: 20px;
 }
 
-.message{
+/* .message{
 
-}
+} */
