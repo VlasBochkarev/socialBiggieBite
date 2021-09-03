@@ -19,7 +19,7 @@ let store = {
                 { id: 2, name: 'Gleb Cherkasky' },
                 { id: 3, name: 'Evgeniy Chernyatin' },
                 { id: 4, name: 'Vitaliy Kurat' },
-                { id: 5, name: 'Alex Nikitenko' },],
+                { id: 5, name: 'Sasha Nikitenko' },],
             messages: [
                 { id: 1, message: 'Hi, how are you' },
                 { id: 2, message: 'Hello I am learn React' },

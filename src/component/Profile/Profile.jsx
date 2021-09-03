@@ -3,6 +3,7 @@ import './Profile.module.css'
 import s from './Profile.module.css'
 import MyPosts from './MyPosts/MyPosts'
 import Profileinfo from './MyPosts/Profileinfo/Profileinfo'
+import MyPostsContainer from './MyPosts/MyPostContainer'
 
 
 const Profile = (props) => {
@@ -11,10 +12,7 @@ const Profile = (props) => {
 
     return <div>
         <Profileinfo />
-        <MyPosts 
-        posts={props.profilePage.posts} 
-        newPostText={props.profilePage.newPostText}
-        dispatch={props.dispatch}/>
+        <MyPostsContainer store={props.store}/>
     </div>
 }
 export default Profile
