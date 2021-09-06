@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
-import Dialogs from './component/Dialogs/Dialogs';
 import DialogsContainer from './component/Dialogs/DialogsContainer';
 import Header from './component/Header/Header';
 import Music from './component/Music/Music';
@@ -25,11 +24,8 @@ const App = (props) => {
         <Nav />
         <div className='app-wrapper-content'>
 
-          <Route path='/dialogs' render={() => <DialogsContainer
-            store={props.store}
-             />} />
-          <Route path='/profile' render={() => <Profile
-            store={props.store}/>} />
+          <Route path='/dialogs' render={() => <DialogsContainer/>} />
+          <Route path='/profile' render={() => <Profile/>} />
 
           <Route path='/News' render={() => <News />} />
           <Route path='/music' render={() => <Music />} />
