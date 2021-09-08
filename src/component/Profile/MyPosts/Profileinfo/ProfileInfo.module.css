@@ -17,4 +17,14 @@
 .descriptionBlock{
     padding: 10px;
 }
+.profileInfo{
+    
+    font-size: 20px;
+    color: white;
+}
+.userContacts{
+    padding: 10px;
+    font-size: 15px;
+    color: wheat;
+}
 
