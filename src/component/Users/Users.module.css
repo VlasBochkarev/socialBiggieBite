@@ -21,3 +21,8 @@
     font-weight: bold;
     color: gold;
 }
+
+.loading {
+    
+    border-radius: 10%;
+}
