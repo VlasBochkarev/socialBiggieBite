@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
 import DialogsContainer from './component/Dialogs/DialogsContainer';
-import Header from './component/Header/Header';
+import HeaderContainer from './component/Header/HeaderContainer';
 import Music from './component/Music/Music';
 import Nav from './component/Navbar/Nav';
 import News from './component/News/News';
@@ -19,7 +19,7 @@ const App = (props) => {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
-        <Header />
+        <HeaderContainer />
         <Nav />
         <div className='app-wrapper-content'>
 

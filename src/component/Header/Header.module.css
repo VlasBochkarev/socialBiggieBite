@@ -1,15 +1,29 @@
 .header {
     grid-area: h;
     background: linear-gradient(to right, rgb(58, 55, 55) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.4) 60%, rgb(58, 55, 55) 100%);
-    
-    
-    
+
 }
 
 .logo {
+    
     font-family: 'Kaushan Script', cursive;
     color: #fff;
     margin: 10px;
+    margin-top: 0px;
     font-size: 50px;
     text-shadow: 3px 2px 1px black;
+}
+
+.loginBlock{
+    font-size: 30px;
+    padding: 0px;
+    margin-top: 0;
+    float: right;
+    color: #fff
+}
+
+.loginBlock a{
+   
+    text-decoration: none;
+    color: #fff;
 }
