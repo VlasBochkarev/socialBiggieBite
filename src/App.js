@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import DialogsContainer from './component/Dialogs/DialogsContainer';
 import HeaderContainer from './component/Header/HeaderContainer';
+import LoginPage from './component/Login/Login';
 import Music from './component/Music/Music';
 import Nav from './component/Navbar/Nav';
 import News from './component/News/News';
@@ -26,7 +27,7 @@ const App = (props) => {
           <Route path='/dialogs' render={() => <DialogsContainer/>} />
           <Route path='/profile/:userId?' render={() => <ProfileContainer/>} />
           <Route path='/users' render={() => <UsersContainer/>} />
-
+          <Route path='/login' render={() => <LoginPage/>} />
           <Route path='/News' render={() => <News />} />
           <Route path='/music' render={() => <Music />} />
           <Route path='/settings' render={() => <Settings />} />
