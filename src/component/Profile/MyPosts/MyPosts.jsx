@@ -1,12 +1,14 @@
 import React from 'react'
-import {addPostActionCreator, updateNewPostTextActionCreator} from '../../../redux/profile-reducer'
 import s from './MyPosts.module.css'
 import Post from './Post/Post'
 import {Field, reduxForm} from "redux-form";
+import {maxLengthCreator, required} from "../../../utils/validators/validators";
+import {Textarea} from "../../common/FormControls/FormControls";
 
-const MyPosts = (props) => {
-    let postElements = props.posts.map(p => <Post message={p.message} like={p.likesCount}/>)
-    let newPostElement = React.createRef();
+const maxLength10 = maxLengthCreator(10)
+
+const MyPosts = React.memo(props => {
+    let postElements = props.posts.map(p => <Post key={p.id} message={p.message} like={p.likesCount}/>)
     let onAddPost = (values) => {
         props.addPost(values.newPostText)
     }
@@ -22,13 +24,16 @@ const MyPosts = (props) => {
             </div>
         </div>
     )
-}
+})
 
 const AddNewPostForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
-                <Field name={'newPostText'} component={'textarea'}/>
+                <Field name={'newPostText'}
+                       component={Textarea}
+                       placeholder={'Post Massage'}
+                       validate={[required, maxLength10]}/>
 
             </div>
             <div>

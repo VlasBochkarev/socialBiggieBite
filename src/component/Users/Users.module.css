@@ -1,7 +1,7 @@
 .userPhoto{
     margin: 10px;
     border-radius: 50%;
-    width: 150x;
+    width: 150px;
     height: 150px;
 }
 .header{
@@ -10,17 +10,8 @@
     font-size: 20px;
     color: white;
 }
-.page{
-    letter-spacing: 5px;
-    color: white;
-    font-size: 20px;
-    
-    text-align: center;
-}
-.selectedPage{
-    font-weight: bold;
-    color: gold;
-}
+
+
 
 .loading {
     
